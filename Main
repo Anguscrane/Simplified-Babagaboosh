@@ -89,7 +89,7 @@ def periodic_check():
     app.after(10, periodic_check)  # Check every 10 milliseconds
 
 def CohereSend(message_most_recent):
-    co = cohere.Client('EE9mVLw8S3XTfgvgC5SIZmWtNMJ0Ed6WQ5QL5Kk4')
+    co = cohere.Client('PLACEHOLDER')
     
     # Prepare chat history for Cohere APIPalace avenue work  
     chat_history = [{"role": "USER", "message": entry[0]} if entry[1] == "" else {"role": "CHATBOT", "message": entry[1]} for entry in History]
